@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Tchonang Support Portal">
+    <meta name="author" content="Gconnect">
+
+    <title>{% block title %}Tchonang University{% endblock %}</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+
+      <!-- Javascript JS ---->
+    <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <title>Welcome to Tchonang University</title>
+  </head>
+
+<body>
+    <! Navigation Bar ------->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-blue bg-dark">
+          <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'images/favicon.ico' %}" style="width:50px;">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'home' %}">ACCUEIL<span class="sr-only">(current)</span></a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}">A PROPOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}">PROGRAMMES & ADMISSION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}">ETUDIANTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'monportail' %}">MON PORTAIL</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+        {% block content %}
+
+        {% endblock %}
+
+      <!------ Include the above in your HEAD tag ---------->
+     <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href=""><img class="brand-logo-light" src="" alt="" width="140" height="37" srcset=""></a>
+                <p>TCHONANG HIGHER INSTITUTE BAFOUSSAM (THIB), Authorisation N: 18-0078/L/MINESUP/DDES du 29 Jan 2018 est votre Centre de formation professionnel et academique qui vous offres des formations dans les domaines les plus en vues. We are an award-winning creative institute, dedicated to the best result in information technology, architecture, business management, and marketing.</p>
+                <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>GENIUS CONNECT</span><span>. </span><span>All Rights Reserved.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>Contacts</h5>
+              <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>Rue Tchonang, Bafoussam, Ouest, Cameroun</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>email:</dt>
+                <dd><a href="mailto:info@tchonanguniversity.org">info@tchonanguniversity.org</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>phones:</dt>
+                <dd><a href="Tel:#">(237) 655 39 88 83</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Links</h5>
+              <ul class="nav-list">
+                <li><a href="{% url 'home' %}">About</a></li>
+                <li><a href="{% url 'home' %}">Programmes</a></li>
+                <li><a href="{% url 'home' %}">Etudiants</a></li>
+                <li><a href="{% url 'monportail' %}">Mon Portail</a></li>
+              </ul>
+
+            <!-- Add font awesome icons -->
+            <a href="https://www.facebook.com/tchonanguniversity" target=”_blank” class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" target=”_blank” class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com" target=”_blank” class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com" target=”_blank” class="fa fa-youtube"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

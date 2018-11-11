@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+<title>{% block title %}Bienvenue  a Mon Portail{% endblock %}</title>
+
+{% block content %}
+
+<!-- Text Content=========================== -->
+<section id="middle" class="brings-school-website-section">
+  <div class="container">
+    <div class="team gap-top-bottom">
+      <div class="center wow fadeInDown animated">
+        <h1 class="text-center-line">Bienveue dans votre espace universitaire?</h1>
+        <p class="lead">Un Système Informatique de gestion scolaire simple, mais puissant</p>
+      </div>
+      <div class="row clearfix">
+        <div class="col-md-4 col-sm-6"> </div>
+        <!--/.col-lg-4 -->
+
+        <!--/.col-lg-4 -->
+      </div>
+      <!--/.row -->
+
+      <!--skill_border-->
+
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="section-box">
+          <div class="brings-box-icon"> <img class="" src="{% static 'images/principal-icon.png' %}" alt="Admin/Principal"> </div>
+          <div class="brings-box-heading"> Fonctions administratives </div>
+          <div class="brings-box-content">
+            <ul>
+              <li>Ajouter / mettre à jour / supprimer des informations sur les étudiants</li>
+              <li>Ajouter / mettre à jour / supprimer des informations sur les enseignants </li>
+              <li>Ajouter / mettre à jour / supprimer des informations sur les parents </li>
+              <li>Ajouter / mettre à jour / supprimer les notes des étudiants </li>
+              <li>Gérer les logins pour les élèves / parents / enseignants </li>
+              <li>Gérer les événements scolaires </li>
+              <li>Apporter du support aux feedbacks des élèves / parents</li>
+              <li>Gérer les détails du transport</li>
+              <li>Modifier les paramètres du système</li>
+              <li>Envoyer un message à l'enseignant / aux parents / aux élèves </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="section-box">
+          <div class="brings-box-icon"> <img class="" src="{% static 'images/teacher-icon.png' %}" alt="teacher"> </div>
+          <div class="brings-box-heading"> Fonctions Enseignants </div>
+          <div class="brings-box-content">
+            <ul>
+              <li>Ajouter / mettre à jour / supprimer des informations sur les étudiants</li>
+              <li>Importer / Exporter les notes sur format CSV </li>
+              <li>Ajouter / mettre à jour / supprimer des informations sur les parents </li>
+              <li>Ajouter / mettre à jour / supprimer une routine de classe </li>
+              <li>Ajouter / mettre à jour / supprimer les notes des étudiants </li>
+              <li>Ajouter / mettre à jour / supprimer des événements scolaires </li>
+              <li>Gérer les logins pour les étudiants / parents</li>
+              <li>Envoyer un message aux parents</li>
+              <li>Gérer les notes / la présence / les examens / les cours</li>
+              <li>Envoyer des notes aux parents par message ou email </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="section-box">
+          <div class="brings-box-icon"> <img class="" src="{% static 'images/student-icon.png' %}" alt="student"> </div>
+          <div class="brings-box-heading"> Fonctions Etudiants </div>
+          <div class="brings-box-content">
+            <ul>
+              <li>Voir le profil de l'enseignant </li>
+              <li>Voir les événements de l'école dans le calendrier </li>
+              <li>Voir ses propres notes / les présences et autres commentaires </li>
+              <li>Envoyer des messages / feedbacks à l'enseignant </li>
+              <li>Voir la routine de la classe </li>
+              <li>Voir la performance globale de la classe de l'étudiant </li>
+              <li>Voir les transports et les itinéraires scolaires </li>
+              <li>Gérer son propre profil </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="section-box">
+          <div class="brings-box-icon"> <img class="" src="{% static 'images/parents-icon.png' %}" alt="Parent"> </div>
+          <div class="brings-box-heading"> Fonctions Parents </div>
+          <div class="brings-box-content">
+            <ul>
+              <li>Voir le profil de l'enseignant </li>
+              <li>Voir les transports et les itinéraires scolaires </li>
+              <li>Voir les détails du cours our syllabus </li>
+              <li>Voir les événements de l'école dans le calendrier </li>
+              <li>Voir les notes et presences de son enfant </li>
+              <li>Envoyer des messages / feedbacks à l'administration / enseignants / étudiants </li>
+              <li>Voir la routine de classe </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   <br>
+</section>
+
+{% endblock %}
