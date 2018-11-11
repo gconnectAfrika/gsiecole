@@ -224,7 +224,6 @@ ul, ol {
 /*-------- Mon portail styling--------
 */
 .brings-school-website-section {
-    background-image: url("{% static 'images/collegemgmt.png' %}");
     background-repeat: no-repeat, repeat;
     background-color: #cccccc;
 }
